@@ -17,7 +17,6 @@ function setup() {
     var canvas = createCanvas(window.innerWidth, window.innerHeight);
     canvas.parent(canvdiv);
     background('rgba(1,1,1,0.01)');
-    //crosses.push(new Cross(height, width, 1, 200));
 }
 
 function draw() {
