@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<title> Tadao Ando </title>
+<style>
+  body  {
+        margin: 0;
+        background-color: rgb(39, 37, 37);
+    }
+    .banner{
+        background-color: rgb(124, 120, 120); 
+        background-image: url(concrete.jpg);
+        background-position: center;
+        background-repeat: repeat;
+        height: 100px;
+        width: 100%;
+       
+    }
+    .banner_bottom{
+        background-color: rgb(124, 120, 120);
+        background-image: url(concrete.jpg);
+        background-position: center;
+        background-repeat: repeat; 
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        
+    }
+</style>
+</head>
+<body>
+
+    <div class="banner">
+
+    </div>
+    <div class="banner_bottom">
+        
+            </div>
+</body>
