@@ -66,3 +66,13 @@ body {
 canvas {
     display: block;
 }
+
+@font-face {
+    font-family: "Tadao";
+    src: url(Font/raleway.thin.ttf) format("truetype");
+}
+
+h1,
+h5 {
+    font-family: "Tadao", "MS PGothic", sans-serif;
+}
