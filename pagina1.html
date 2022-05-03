@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html style="overflow: visible">
 
 <head>
     <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
@@ -6,13 +7,12 @@
 
     <style>
         .banner {
-            position: fixed;
+            position: relative;
             left: calc((100% - 850px)/2);
         }
         
         .topnav {
-            position: fixed;
-            top: 250px;
+            position: relative;
             left: calc((100% - 850px)/2);
             width: 850px;
             list-style-type: none;
@@ -28,8 +28,8 @@
         }
         
         .bottomnav {
-            position: fixed;
-            top: 95%;
+            position: absolute;
+            top: 100%;
             left: calc((100% - 850px)/2);
             width: 850px;
             list-style-type: none;
@@ -59,11 +59,21 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+        
+        .mainbody {
+            position: absolute;
+            margin: 0;
+            padding: 16px;
+            position: relative;
+            left: calc((100% - 850px)/2);
+            width: 850px;
+            box-sizing: border-box;
+        }
     </style>
 
 </head>
 
-<body style="background-color:black;">
+<body style="position: absolute; background-color:black;">
     <a href="index.html"><img src="banner.png" class="banner"></a>
 
     <ul class="topnav">
@@ -73,10 +83,43 @@
     </ul>
 
     <div class="mainbody">
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus quis justo vitae tristique. Etiam augue ante, tristique vel sagittis sed, tincidunt et nunc. Pellentesque eget nibh lorem. Cras lobortis, dui sit amet lacinia blandit, nisl
+            magna ornare velit, tempor ullamcorper ante nisl ut augue. Sed egestas neque pretium tempor auctor. Curabitur imperdiet odio at metus pharetra aliquet. Vivamus varius quam sem, a sagittis eros mollis eget. Nulla scelerisque felis vitae nunc
+            accumsan mattis. Sed consequat ullamcorper tellus interdum egestas. Proin at bibendum ligula, sit amet dignissim quam. Nullam dapibus ipsum elementum elit fringilla tristique. Donec ac cursus enim, at hendrerit dolor. Aliquam condimentum eros
+            ac vulputate porta. Etiam maximus lobortis risus, vitae pretium lacus vehicula aliquet. Cras pretium aliquet dolor, sed rhoncus purus tempor ac. In commodo lectus sagittis elit luctus interdum. Integer tincidunt velit elit. Quisque id vulputate
+            dui. Vivamus lacinia, enim in porta hendrerit, nunc tortor ultricies felis, at lacinia neque lacus in nisl. Quisque facilisis, est sed lobortis vehicula, augue magna condimentum odio, maximus viverra arcu neque id lectus. Suspendisse fringilla
+            condimentum augue quis sodales. Nullam risus nisl, vestibulum et rhoncus quis, faucibus quis dolor. Etiam finibus, ligula in venenatis accumsan, augue felis tincidunt elit, sed porta orci ligula id massa. Pellentesque in facilisis dui, at
+            tincidunt odio. Nunc elementum dictum dolor eget lobortis. Nunc blandit a velit sed convallis. Donec eget justo sed mauris pharetra bibendum. Praesent tempor risus sit amet risus porta scelerisque. Vestibulum sodales id purus ultricies vestibulum.
+            Quisque lobortis vel enim nec tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec sapien vel odio iaculis rutrum sit amet ac mi. Ut iaculis ante vel metus lobortis efficitur. Aenean ullamcorper mi id vehicula.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus quis justo vitae tristique. Etiam augue ante, tristique vel sagittis sed, tincidunt et nunc. Pellentesque eget nibh lorem. Cras lobortis, dui sit amet lacinia blandit, nisl
+            magna ornare velit, tempor ullamcorper ante nisl ut augue. Sed egestas neque pretium tempor auctor. Curabitur imperdiet odio at metus pharetra aliquet. Vivamus varius quam sem, a sagittis eros mollis eget. Nulla scelerisque felis vitae nunc
+            accumsan mattis. Sed consequat ullamcorper tellus interdum egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus quis justo vitae tristique. Etiam augue ante, tristique vel sagittis sed, tincidunt et nunc. Pellentesque
+            eget nibh lorem. Cras lobortis, dui sit amet lacinia blandit, nisl magna ornare velit, tempor ullamcorper ante nisl ut augue. Sed egestas neque pretium tempor auctor. Curabitur imperdiet odio at metus pharetra aliquet. Vivamus varius quam
+            sem, a sagittis eros mollis eget. Nulla scelerisque felis vitae nunc accumsan mattis. Sed consequat ullamcorper tellus interdum egestas. Proin at bibendum ligula, sit amet dignissim quam. Nullam dapibus ipsum elementum elit fringilla tristique.
+            Donec ac cursus enim, at hendrerit dolor. Aliquam condimentum eros ac vulputate porta. Etiam maximus lobortis risus, vitae pretium lacus vehicula aliquet. Cras pretium aliquet dolor, sed rhoncus purus tempor ac. In commodo lectus sagittis
+            elit luctus interdum. Integer tincidunt velit elit. Quisque id vulputate dui. Vivamus lacinia, enim in porta hendrerit, nunc tortor ultricies felis, at lacinia neque lacus in nisl. Quisque facilisis, est sed lobortis vehicula, augue magna
+            condimentum odio, maximus viverra arcu neque id lectus. Suspendisse fringilla condimentum augue quis sodales. Nullam risus nisl, vestibulum et rhoncus quis, faucibus quis dolor. Etiam finibus, ligula in venenatis accumsan, augue felis tincidunt
+            elit, sed porta orci ligula id massa. Pellentesque in facilisis dui, at tincidunt odio. Nunc elementum dictum dolor eget lobortis. Nunc blandit a velit sed convallis. Donec eget justo sed mauris pharetra bibendum. Praesent tempor risus sit
+            amet risus porta scelerisque. Vestibulum sodales id purus ultricies vestibulum. Quisque lobortis vel enim nec tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec sapien vel odio iaculis rutrum sit amet ac mi.
+            Ut iaculis ante vel metus lobortis efficitur. Aenean ullamcorper mi id vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus quis justo vitae tristique. Etiam augue ante, tristique vel sagittis sed, tincidunt et nunc.
+            Pellentesque eget nibh lorem. Cras lobortis, dui sit amet lacinia blandit, nisl magna ornare velit, tempor ullamcorper ante nisl ut augue. Sed egestas neque pretium tempor auctor. Curabitur imperdiet odio at metus pharetra aliquet. Vivamus
+            varius quam sem, a sagittis eros mollis eget. Nulla scelerisque felis vitae nunc accumsan mattis. Sed consequat Proin at bibendum ligula, sit amet dignissim quam. Nullam dapibus ipsum elementum elit fringilla tristique. Donec ac cursus enim,
+            at hendrerit dolor. Aliquam condimentum erossem, a sagittis eros mollis eget. Nulla scelerisque felis vitae nunc accumsan mattis. Sed consequat ullamcorper tellus interdum egestas. Proin at bibendum ligula, sit amet dignissim quam. Nullam
+            dapibus ipsum elementum elit fringilla tristique. Donec ac cursus enim, at hendrerit dolor. Aliquam condimentum eros ac vulputate porta. Etiam maximus lobortis risus, vitae pretium lacus vehicula aliquet. Cras pretium aliquet dolor, sed rhoncus
+            purus tempor ac. In commodo lectus sagittis elit luctus interdum. Integer tincidunt velit elit. Quisque id vulputate dui. Vivamus lacinia, enim in porta hendrerit, nunc tortor ultricies felis, at lacinia neque lacus in nisl. Quisque facilisis,
+            est sed lobortis vehicula, augue magna condimentum odio, maximus viverra arcu neque id lectus. Suspendisse fringilla condimentum augue quis sodales. Nullam risus nisl, vestibulum et rhoncus quis, faucibus quis dolor. Etiam finibus, ligula
+            in venenatis accumsan, augue felis tincidunt elit, sed porta orci ligula id massa. Pellentesque in facilisis dui, at tincidunt odio. Nunc elementum dictum dolor eget lobortis. Nunc blandit a velit sed convallis. Donec eget justo sed mauris
+            pharetra bibendum. Praesent tempor risus sit amet risus porta scelerisque. Vestibulum sodales id purus ultricies vestibulum. Quisque lobortis vel enim nec tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nec
+            sapien vel odio iaculis rutrum sit amet ac mi. Ut iaculis ante vel metus lobortis efficitur. Aenean ullamcorper mi id vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus quis justo vitae tristique. Etiam augue ante,
+            tristique vel sagittis sed, tincidunt et nunc. Pellentesque eget nibh lorem. Cras lobortis, dui sit amet lacinia blandit, nisl magna ornare velit, tempor ullamcorper ante nisl ut augue. Sed egestas neque pretium tempor auctor. Curabitur imperdiet
+            odio at metus pharetra aliquet. Vivamus varius quam sem, a sagittis eros mollis eget. Nulla scelerisque felis vitae nunc accumsan mattis. Sed consequat Proin at bibendum ligula, sit amet dignissim quam. Nullam dapibus ipsum elementum elit
+            fringilla tristique. Donec ac cursus enim, at hendrerit dolor. Aliquam condimentum eros
+        </p>
+        <ul class="bottomnav">
+            <li><a><b>Despre</b></a></li>
+        </ul>
     </div>
 
-    <ul class="bottomnav">
-        <li><a><b>Despre</b></a></li>
-    </ul>
 </body>
+
+</html>
