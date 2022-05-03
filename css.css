@@ -76,7 +76,8 @@ canvas {
 
 h1,
 h5,
-li {
+li,
+.mainbody {
     font-family: "Tadao", "MS PGothic", sans-serif;
     font-size: 16px;
     color: #fff;
