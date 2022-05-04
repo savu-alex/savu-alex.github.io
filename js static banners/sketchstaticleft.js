@@ -32,3 +32,5 @@ function draw() {
 function mousePressed() {
     console.log(window.innerWidth);
 }
+
+//https://github.com/processing/p5.js/wiki/Global-and-instance-mode
