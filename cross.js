@@ -18,7 +18,7 @@ class Cross {
     render() {
         if (this.c >= 0 || this.str >= 0) {
             if (frameCount % 2 == 0) {
-                background('rgba(1,1,1,'+this.transp+')');
+                background('rgba(1,1,1,' + this.transp + ')');
                 this.transp += 0.03;
                 for (let i = 1; i <= 3; i++) {
                     strokeWeight(this.str);

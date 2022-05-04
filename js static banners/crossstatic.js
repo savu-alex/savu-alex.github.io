@@ -1,6 +1,7 @@
 class Cross {
     constructor(height, width, x, y) {
         this.prog = 0;
+        this.progside = 0;
         this.height = height;
         this.width = width;
         this.x = x;
@@ -13,20 +14,21 @@ class Cross {
         if (this.side == 2) this.displace *= -1;
         this.height += this.displace;
         this.transp = 0.01;
+        console.log(this.x, this.y);
     }
 
     render() {
         if (this.c >= 0 || this.str >= 0) {
             if (frameCount % 2 == 0) {
-                background('rgba(1,1,1,'+this.transp+')');
+                background('rgba(1,1,1,' + this.transp + ')');
                 this.transp += 0.03;
                 for (let i = 1; i <= 3; i++) {
                     strokeWeight(this.str);
                     stroke(this.c);
                     line(
-                        this.x - this.prog,
+                        this.x - this.progside,
                         this.y,
-                        this.x + this.prog,
+                        this.x + this.progside,
                         this.y
                     );
                     line(
@@ -39,6 +41,10 @@ class Cross {
                         this.c -= this.increment;
                     if (frameCount % 2 == 0) {
                         this.prog += 20;
+                        if (this.x + this.progside <= window.innerWidth / 2)
+                            this.progside += 20;
+                        if (this.x > window.innerWidth / 2 && this.x - this.progside > window.innerWidth / 2)
+                            this.progside += 20;
                         this.str += this.strinc;
                     }
                 }
