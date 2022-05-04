@@ -13,7 +13,7 @@ let size3 = bannerimg.getBoundingClientRect();
 let size4 = topnav.getBoundingClientRect();
 
 function setup() {
-    let canvas = createCanvas((window.innerWidth - 850) / 2, size1.height + size2.height + size3.height + size4.height);
+    let canvas = createCanvas((window.innerWidth - 850) / 2, window.innerHeight);
     canvas.parent(canv);
     background(0);
     crosses.push(new Cross(width, height, random(width + 50), random(height - 50)));
