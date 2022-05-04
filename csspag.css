@@ -1,0 +1,67 @@
+.banner {
+    position: relative;
+    left: calc((100% - 850px)/2);
+}
+
+.topnav {
+    position: relative;
+    left: calc((100% - 850px)/2);
+    width: 850px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(185, 185, 185);
+}
+
+.bottomnav {
+    position: relative;
+    top: 100%;
+    left: calc((100% - 850px)/2);
+    width: 850px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-top-color: rgb(185, 185, 185);
+}
+
+li {
+    float: right;
+}
+
+#home {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainbody {
+    position: absolute;
+    margin: 0;
+    padding: 16px;
+    position: relative;
+    left: calc((100% - 850px)/2);
+    width: 850px;
+    box-sizing: border-box;
+}
+
+.ignorecss {
+    all: unset;
+}
