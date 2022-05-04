@@ -1,15 +1,20 @@
 let crosses = [];
 
+let canv = document.getElementById('bnrleft');
+
 let body = document.getElementById('body');
 let botnav = document.getElementById('botnav');
 let bannerimg = document.getElementById('bannerimg');
+let topnav = document.getElementById('topnav');
 
 let size1 = body.getBoundingClientRect();
 let size2 = botnav.getBoundingClientRect();
 let size3 = bannerimg.getBoundingClientRect();
+let size4 = topnav.getBoundingClientRect();
 
 function setup() {
-    createCanvas(windowWidth / 3, windowHeight);
+    let canvas = createCanvas((window.innerWidth - 850) / 2, size1.height + size2.height + size3.height + size4.height);
+    canvas.parent(canv);
     background(0);
     crosses.push(new Cross(width, height, random(width + 50), random(height - 50)));
 }
@@ -25,5 +30,5 @@ function draw() {
 }
 
 function mousePressed() {
-    console.log(size1);
+    console.log(window.innerWidth);
 }
