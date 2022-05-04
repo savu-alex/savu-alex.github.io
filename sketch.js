@@ -24,7 +24,14 @@ function draw() {
         crosses[0].render();
         if (crosses[0].exists() == false && newPageSequence == 0) {
             console.log("new page process initiated");
-            location.replace("./pagina" + pg + ".html");
+            let url;
+            if (pg == 1)
+                url = "./tadao.html";
+            else if (pg == 2)
+                url = "./cladiri.html";
+            else if (pg == 3)
+                url = "./premii.html";
+            location.replace(url);
             newPageSequence = 1;
         }
     }

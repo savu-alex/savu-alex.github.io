@@ -1,6 +1,6 @@
 let crosses = [];
 
-let canv = document.getElementById('bnrleft');
+let canv = document.getElementById('bnrstt');
 let img = document.getElementById('bannerimg');
 
 
