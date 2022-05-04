@@ -3,18 +3,30 @@
 <html style="overflow: visible">
 
 <head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="csspag.css" media="screen" />
 </head>
 
 <body style="position: absolute; background-color:black;">
-    <a href="index.html"><img src="banner.png" class="banner"></a>
+    <a href="index.html"><img src="banner.png" class="banner" id="bannerimg"></a>
 
-    <ul class="topnav">
+    <ul class="topnav" id="topnav">
         <li id="home"><a href="pagina1.html"><b>Tadao Ando</b></a></li>
         <li><a href="pagina3.html"><b>Cladiri</b></a></li>
         <li><a href="pagina2.html"><b>Premii</b></a></li>
     </ul>
+
+    <div class="mainbody" id="body">
+
+        <ul class="bottomnav" id="botnav">
+            <li><a><b>Despre</b></a>
+            </li>
+        </ul>
+    </div>
+    <script src="js static banners/crossstatic.js"></script>
+    <script src="js static banners/sketchstatic.js"></script>
 </body>
 
 </html>
