@@ -37,6 +37,7 @@
     border-bottom-width: 0px;
     border-top-color: rgb(185, 185, 185);
     z-index: 101;
+    font-size: 9px;
 }
 
 li {
